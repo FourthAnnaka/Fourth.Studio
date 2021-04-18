@@ -1,0 +1,112 @@
+/* div {
+  border: 1px solid red;
+} */
+
+@import url("https://use.typekit.net/jpd7mhp.css");
+
+
+
+body, html {
+    cursor: url(../images/cursor.png), auto;
+
+}
+a:hover {
+  cursor: url(../images/cursor.png), auto;
+  color: #FF9BDA;
+  transition: 0.3s;
+}
+::selection {
+  background: #00C2FF; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #00C2FF; /* Gecko Browsers */
+}
+
+h2, h3, h4, h5 {
+  font-family: nimbus-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0 0 0 0;
+  color: #3233FF;
+}
+
+a {
+  font-family: nimbus-sans, sans-serif;
+  font-weight: 300;
+  text-decoration: underline;
+  color: #3233FF;
+}
+
+h1 {
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 700;
+  letter-spacing: -1px;
+  font-style: normal;
+  margin: 0 0 0 -12px;
+  color: #3233FF;
+}
+
+em {
+  font-weight: 400i;
+}
+.container {
+  width: 80%;
+  padding: 20px;
+}
+
+#description {
+  width: 950px;
+  text-align: left;
+  padding: 100px 0px;
+}
+@media (max-width: 900px) {
+  #description {
+    width: 100%;
+  }
+}
+ h1 {
+  padding-top: 20px;
+  font-size: 140pt;
+  line-height: .8em;
+}
+h3 {
+  font-size: 30pt;
+  padding-bottom: 30px;
+  font-family: tenon, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (max-width: 700px) {
+  h1 {
+    font-size: 80pt;
+  }
+
+  h3, h2 {
+    font-size: 18pt;
+    text-align: left;
+  }
+
+} /* end media width 700 */
+
+body {
+    background-color: blue;
+    animation-name: colorbg;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    display: flex;
+}
+@keyframes colorbg {
+  0%   {background-color: #0000FF;}
+50%  {background-color: #000;}
+100%  {background-color: #0000FF;}
+}
+
+footer {
+  padding-top: 60px;
+
+}
